@@ -1,4 +1,4 @@
-# slider-carousel
+# Slider Carousel
 
 ## How to use
 1. Import [carousel.js](./js/carousel.js) scritp.
@@ -53,3 +53,7 @@ You can stylize the elements by yourself using the classes:
   - The images of your carousel
 
 Check the [index.css](./css/index.css) file to view the default settings.
+
+## Demo
+
+Check the [Slider Carousel Demo](https://suspicious-minsky-18a624.netlify.app/)
