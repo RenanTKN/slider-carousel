@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slider Carousel</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="container" id="carouselContainer"></div>
+    <script>
+      const info = [
+        '<h1>Raposa</h1> Imagem de <a href="https://pixabay.com/pt/users/AlainAudet-631535/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=715588" target="_blank">Alain Audet</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=715588" target="_blank">Pixabay</a>',
+        '<h1>Tigre</h1> Imagem de <a href="https://pixabay.com/pt/users/TeeFarm-199315/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3264048" target="_blank">TeeFarm</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3264048" target="_blank">Pixabay</a>',
+        '<h1>Arara</h1> Imagem de <a href="https://pixabay.com/pt/users/Couleur-1195798/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3601194" target="_blank">Couleur</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3601194" target="_blank">Pixabay</a>',
+        '<h1>Tartaruga</h1> Imagem de <a href="https://pixabay.com/pt/users/12019-12019/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2361247" target="_blank">David Mark</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2361247" target="_blank">Pixabay</a>',
+        '<h1>Coruja</h1> Imagem de <a href="https://pixabay.com/pt/users/ractapopulous-24766/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3732867" target="_blank">JL G</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3732867" target="_blank">Pixabay</a>',
+        '<h1>Águia</h1> magem de <a href="https://pixabay.com/pt/users/Kathy2408-5562794/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2386314" target="_blank">Kathy Büscher</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2386314" target="_blank">Pixabay</a>',
+        '<h1>Raposa do ártico</h1> magem de <a href="https://pixabay.com/pt/users/12019-12019/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1979445" target="_blank">David Mark</a> por <a href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1979445" target="_blank">Pixabay</a>',
+      ];
+      const options = {
+        imgPath: "../img/",
+        size: 150,
+        images: [
+          "fox-715588_1920.jpg",
+          "tiger-3264048_1920.jpg",
+          "ara-3601194_1920.jpg",
+          "sea-2361247_1920.jpg",
+          "bird-3732867_1920.jpg",
+          "adler-2386314_1920.jpg",
+          "iceland-1979445_1920.jpg",
+        ],
+        info,
+      };
+      Carousel("carouselContainer", options);
+    </script>
+  </body>
+</html>
